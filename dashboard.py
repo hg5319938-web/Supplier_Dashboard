@@ -557,7 +557,7 @@ with tab3:
           <td style="padding:10px 12px;">{r['supplier_name']}</td>
           <td class="mono" style="padding:10px 12px; color:var(--text-mute);">{r['origin_port']} → {r['dest_dc']}</td>
           <td class="mono" style="padding:10px 12px; color:var(--text-mute);">{r['freight_mode']}</td>
-          <td class="mono" style="padding:10px 12px; text-align:right; color:var(--text-mute);">€{r['value_eur']:,.0f}</td>
+          <td class="mono" style="padding:10px 12px; text-align:right; color:var(--text-mute);">€{r['value_gbp']:,.0f}</td>
           <td class="mono" style="padding:10px 12px; text-align:right; color:{'oklch(70% 0.18 25)' if r['delay_days']>2 else 'var(--text-mute)'};">{r['delay_days']}d</td>
           <td style="padding:10px 12px;">{ship_status_pill(r['shipment_status'])}</td>
         </tr>"""
