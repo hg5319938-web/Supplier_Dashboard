@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dashboard — Page 2</title>
+<style>
+:root{--bg:#0a0a0a;--gold:#d4a83a;--text:#fff;--sub:#ddd;--dim:#999}
+*{box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--text)}
+body{background:var(--bg);margin:0;padding:2rem}
+.container{max-width:1200px;margin:0 auto}
+h1{font-weight:800;letter-spacing:-.03em;margin-bottom:.2rem;color:var(--gold)}
+.sub{color:var(--sub);margin-bottom:1.5rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1rem;margin-bottom:2rem}
+.card{background:#111;border:1px solid #222;border-radius:12px;padding:1rem}
+.card h3{margin:0 0 .5rem;font-size:.9rem;text-transform:uppercase;letter-spacing:.08em;color:var(--gold)}
+table{width:100%;border-collapse:collapse;font-size:.82rem}
+th{text-align:left;padding:.4rem .5rem;border-bottom:1px solid #333;color:var(--dim);font-weight:600}
+td{padding:.35rem .5rem;border-bottom:1px solid #222}
+.badge{display:inline-block;padding:.15rem .45rem;border-radius:999px;font-size:.72rem;font-weight:700;background:#d4a83a22;color:var(--gold);border:1px solid #d4a83a44}
+.alert-high{color:#e86b6b}.alert-med{color:#e0b24d}
+@media(max-width:600px){body{padding:1rem}}
+</style></head><body><div class="container">
+<h1>Supplier Performance Dashboard</h1><p class="sub">Static snapshot from dashboard.db — generated 2026-09-03</p>
+
+<div class="grid">
+<div class="card"><h3>Scorecard — Top Suppliers</h3>
+<table><thead><tr><th>Supplier</th><th>Country</th><th>Category</th><th>OTIF</th><th>Defect</th><th>Score</th></tr></thead><tbody><tr><td><strong>Mediterranean Pantry Srl</strong></td><td>Italy</td><td>Pantry & Oils</td><td>82.6%</td><td>1.26%</td><td><span class="badge">87.3</span></td></tr>
+<tr><td><strong>AlpenSparkling AG</strong></td><td>Switzerland</td><td>Beverages</td><td>72.2%</td><td>0.35%</td><td><span class="badge">84.8</span></td></tr>
+<tr><td><strong>Nordic Cereal OY</strong></td><td>Finland</td><td>Breakfast & Cereals</td><td>71.4%</td><td>1.03%</td><td><span class="badge">81.8</span></td></tr>
+<tr><td><strong>Lyon Dairy Cooperative</strong></td><td>France</td><td>Dairy & Frozen</td><td>57.1%</td><td>1.18%</td><td><span class="badge">74.2</span></td></tr>
+<tr><td><strong>Benelux Personal Care BV</strong></td><td>Netherlands</td><td>Personal Care</td><td>52.9%</td><td>0.48%</td><td><span class="badge">74.1</span></td></tr>
+<tr><td><strong>RheinValley Beverages GmbH</strong></td><td>Germany</td><td>Beverages</td><td>52.2%</td><td>0.7%</td><td><span class="badge">73.3</span></td></tr>
+<tr><td><strong>Iberian Olive Collective SL</strong></td><td>Spain</td><td>Pantry & Oils</td><td>62.5%</td><td>3.43%</td><td><span class="badge">70.5</span></td></tr>
+<tr><td><strong>Aegean Sea Foods Ltd</strong></td><td>Greece</td><td>Dairy & Frozen</td><td>45.5%</td><td>2.88%</td><td><span class="badge">63.5</span></td></tr>
+<tr><td><strong>Polish Snacks S.A.</strong></td><td>Poland</td><td>Snacks & Confectionery</td><td>41.7%</td><td>3.18%</td><td><span class="badge">60.2</span></td></tr>
+<tr><td><strong>Baltic Cleaning UAB</strong></td><td>Lithuania</td><td>Home Care</td><td>41.2%</td><td>4.42%</td><td><span class="badge">56.3</span></td></tr>
+</tbody></table></div>
+<div class="card"><h3>Alerts (15 active)</h3><table><thead><tr><th>Severity</th><th>Supplier</th><th>Detail</th><th>Metric</th></tr></thead><tbody><tr><td class="alert-high"><strong>High</strong></td><td>RheinValley Beverages GmbH</td><td>OTIF 52.2% below 90% target</td><td>52.2%</td></tr>
+<tr><td class="alert-high"><strong>High</strong></td><td>Lyon Dairy Cooperative</td><td>OTIF 57.1% below 90% target</td><td>57.1%</td></tr>
+<tr><td class="alert-high"><strong>High</strong></td><td>Polish Snacks S.A.</td><td>Defect rate 3.18% exceeds 2% threshold</td><td>3.2%</td></tr>
+<tr><td class="alert-high"><strong>High</strong></td><td>Polish Snacks S.A.</td><td>OTIF 41.7% below 90% target</td><td>41.7%</td></tr>
+<tr><td class="alert-high"><strong>High</strong></td><td>Iberian Olive Collective SL</td><td>Defect rate 3.43% exceeds 2% threshold</td><td>3.4%</td></tr>
+<tr><td class="alert-high"><strong>High</strong></td><td>Iberian Olive Collective SL</td><td>OTIF 62.5% below 90% target</td><td>62.5%</td></tr>
+<tr><td class="alert-high"><strong>High</strong></td><td>Benelux Personal Care BV</td><td>OTIF 52.9% below 90% target</td><td>52.9%</td></tr>
+<tr><td class="alert-high"><strong>High</strong></td><td>Baltic Cleaning UAB</td><td>Defect rate 4.42% exceeds 2% threshold</td><td>4.4%</td></tr>
+<tr><td class="alert-high"><strong>High</strong></td><td>Baltic Cleaning UAB</td><td>OTIF 41.2% below 90% target</td><td>41.2%</td></tr>
+<tr><td class="alert-high"><strong>High</strong></td><td>AlpenSparkling AG</td><td>OTIF 72.2% below 90% target</td><td>72.2%</td></tr>
+<tr><td class="alert-high"><strong>High</strong></td><td>Mediterranean Pantry Srl</td><td>OTIF 82.6% below 90% target</td><td>82.6%</td></tr>
+<tr><td class="alert-high"><strong>High</strong></td><td>Nordic Cereal OY</td><td>OTIF 71.4% below 90% target</td><td>71.4%</td></tr>
+<tr><td class="alert-high"><strong>High</strong></td><td>Aegean Sea Foods Ltd</td><td>Defect rate 2.88% exceeds 2% threshold</td><td>2.9%</td></tr>
+<tr><td class="alert-high"><strong>High</strong></td><td>Aegean Sea Foods Ltd</td><td>OTIF 45.5% below 90% target</td><td>45.5%</td></tr>
+<tr><td class="alert-med"><strong>Medium</strong></td><td>Polish Snacks S.A.</td><td>CAPA review due Q-end</td><td>CAPA</td></tr>
+</tbody></table></div>
+<div class="card"><h3>Category Performance</h3><table><thead><tr><th>Category</th><th>Orders</th><th>OTIF</th><th>Defect</th><th>Avg Delay</th></tr></thead><tbody><tr><td><strong>Pantry & Oils</strong></td><td>127</td><td>65.4%</td><td>2.49%</td><td>0.8d</td></tr>
+<tr><td><strong>Personal Care</strong></td><td>95</td><td>63.2%</td><td>0.44%</td><td>0.8d</td></tr>
+<tr><td><strong>Beverages</strong></td><td>195</td><td>62.1%</td><td>0.55%</td><td>0.7d</td></tr>
+<tr><td><strong>Dairy & Frozen</strong></td><td>137</td><td>61.3%</td><td>1.65%</td><td>0.7d</td></tr>
+<tr><td><strong>Breakfast & Cereals</strong></td><td>47</td><td>59.6%</td><td>0.81%</td><td>1.1d</td></tr>
+<tr><td><strong>Home Care</strong></td><td>56</td><td>53.6%</td><td>4.16%</td><td>0.9d</td></tr>
+<tr><td><strong>Snacks & Confectionery</strong></td><td>78</td><td>47.4%</td><td>3.27%</td><td>1.5d</td></tr>
+</tbody></table></div>
+<div class="card"><h3>Freight Mode</h3><table><thead><tr><th>Mode</th><th>Orders</th><th>On-Time</th><th>Avg Delay</th><th>Defect</th></tr></thead><tbody><tr><td><strong>Air</strong></td><td>33</td><td>78.8%</td><td>0.4d</td><td>1.39%</td></tr>
+<tr><td><strong>Truck</strong></td><td>415</td><td>72.8%</td><td>0.5d</td><td>1.66%</td></tr>
+<tr><td><strong>Rail</strong></td><td>114</td><td>66.7%</td><td>1.0d</td><td>1.75%</td></tr>
+<tr><td><strong>Sea</strong></td><td>173</td><td>27.7%</td><td>1.6d</td><td>1.63%</td></tr>
+</tbody></table></div>
+<div class="card"><h3>Port Performance (Top 10)</h3><table><thead><tr><th>Port</th><th>Orders</th><th>OTIF</th><th>Avg Delay</th></tr></thead><tbody><tr><td><strong>Genoa</strong></td><td>59</td><td>74.6%</td><td>0.4d</td></tr>
+<tr><td><strong>Hamburg</strong></td><td>115</td><td>64.3%</td><td>0.6d</td></tr>
+<tr><td><strong>Rotterdam</strong></td><td>95</td><td>63.2%</td><td>0.8d</td></tr>
+<tr><td><strong>Marseille</strong></td><td>101</td><td>62.4%</td><td>0.7d</td></tr>
+<tr><td><strong>Helsinki</strong></td><td>47</td><td>59.6%</td><td>1.1d</td></tr>
+<tr><td><strong>Basel</strong></td><td>80</td><td>58.8%</td><td>0.7d</td></tr>
+<tr><td><strong>Piraeus</strong></td><td>36</td><td>58.3%</td><td>0.6d</td></tr>
+<tr><td><strong>Valencia</strong></td><td>68</td><td>57.4%</td><td>1.2d</td></tr>
+<tr><td><strong>Klaipeda</strong></td><td>56</td><td>53.6%</td><td>0.9d</td></tr>
+<tr><td><strong>Gdansk</strong></td><td>78</td><td>47.4%</td><td>1.5d</td></tr>
+</tbody></table></div>
+</div>
+</div></body></html>
